@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Briefing: Puzzle 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/guides.css" />
+</head>
+<body data-puzzle-id="2">
+  <div class="spy-page">
+    <div class="spy-document-wrapper">
+      <section class="spy-document">
+        <!-- You can reuse the header style from Puzzle 1 if you like -->
+        <header class="spy-header">
+          <span class="spy-header-line">Ministry of Defense</span>
+          <span class="spy-header-line">Signal Analysis Division</span>
+        </header>
+
+        <div class="spy-body">
+          <!-- Morse-style puzzle text / layout from your DOCX -->
+          <p>Decode the following transmissions:</p>
+
+          <pre>
+– . . .
+
+. . –
+
+– –
+
+. – – .
+          </pre>
+
+          <p>Answer:</p>
+          <p>_ _ _ _</p>
+          <p><em>(Clue: the last character is international, not American.)</em></p>
+        </div>
+
+        <div class="spy-code-section">
+          <div class="spy-code-label">Access code</div>
+          <!-- Engine will replace with four underscores automatically -->
+          <div class="spy-code-slots">_ _ _ _</div>
+
+          <form id="puzzle-form" class="spy-code-form" autocomplete="off">
+            <label for="code-input">Enter the 4-letter code</label>
+            <input
+              id="code-input"
+              class="spy-code-input"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="spy-button">Verify</button>
+          </form>
+
+          <p id="feedback" class="spy-feedback"></p>
+
+          <button
+            id="next-button"
+            class="spy-button spy-next-button"
+            type="button"
+            hidden
+          >
+            Proceed to Next Briefing
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="puzzle-config.js"></script>
+  <script src="puzzle-engine.js"></script>
+</body>
+</html>
