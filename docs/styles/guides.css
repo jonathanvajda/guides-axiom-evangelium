@@ -65,8 +65,8 @@ body {
 
 .spy-font {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  font-weight: 600;
-  color: #111;
+  font-style: italic;
+  font-size: 1.1em;
 }
 
 /* “CLASSIFIED” stamp */
