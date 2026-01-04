@@ -181,13 +181,16 @@ body {
   flex: 1 1 160px;
   max-width: 260px;
   padding: 0.55rem 0.7rem;
+  text-align: center;
+  caret-color: #1f8a4d;
   border-radius: 0;
-  border: 1px solid rgba(0, 0, 0, 0.55);
-  background: #111;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
   color: #e5ffe0;
-  font-family: var(--font-body);
+  font-family: "Courier New", monospace;
   font-size: 1.1rem;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
   outline: none;
   transition: box-shadow 0.15s ease, border-color 0.15s ease;
@@ -196,6 +199,8 @@ body {
 .spy-code-input:focus {
   border-color: var(--accent-green);
   box-shadow: 0 0 0 1px rgba(31, 138, 77, 0.9);
+  outline: none;
+  border-bottom-color: var(--accent-green);
 }
 
 .spy-button {
@@ -279,3 +284,4 @@ body {
     letter-spacing: 0.28em;
   }
 }
+

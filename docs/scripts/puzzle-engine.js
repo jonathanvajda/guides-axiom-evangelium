@@ -42,8 +42,7 @@
       : null; // null = last puzzle or intentionally no next
 
   function normalize(str) {
-    // remove spaces, uppercase
-    return String(str).replace(/\s+/g, "").toUpperCase();
+    return String(str).toUpperCase();
   }
 
   const normalizedCorrect = normalize(correctPhrase);
