@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Briefing: Puzzle 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/guides.css" />
+</head>
+<body data-puzzle-id="1">
+  <div class="spy-page">
+    <div class="spy-document-wrapper">
+      <section class="spy-document">
+        <header class="spy-header">
+          <span class="spy-header-line">Ministry of Defense</span>
+          <span class="spy-header-line">Kleiner Freundeskreis</span>
+        </header>
+
+        <div class="spy-meta">
+          <span class="spy-meta-label">Date:</span>
+          <span>1990 November 1</span>
+        </div>
+
+        <div class="spy-body">
+          <p><strong>Agent Bright</strong></p>
+
+          <p>
+            Given the great value of the investment being considered, there is a significant
+            cost which must be accounted for. As you imagine, concerted effort has been made
+            to prepare for this. We have consulted several informants and experts, assessing
+            risk and likelihood of success.
+          </p>
+
+          <p>
+            It is important to make this clear: without your presence, this operation will
+            likely be difficult. This is why I am making this information available to you.
+          </p>
+
+          <p>
+            In the next year, I have certain plans for you to carry out to make this mission
+            possible. Your role consists in part as specialist given your prior expertise in
+            this subject matter, but you will also be a key informant for distributing
+            critical and sensitive matters. It may also be necessary to transport goods.
+          </p>
+
+          <p>
+            The question is whether you can recognize when something is off, and use it to our
+            advantage.
+          </p>
+
+          <p class="spy-signoff">Agent Morris</p>
+        </div>
+
+        <div class="spy-code-section">
+          <div class="spy-code-label">Access code (8 characters)</div>
+          <div class="spy-code-slots">_ _ _ _ _ _ _ _</div>
+
+          <form id="puzzle-form" class="spy-code-form" autocomplete="off">
+            <label for="code-input">Enter the key to continue</label>
+            <input
+              id="code-input"
+              class="spy-code-input"
+              type="text"
+              maxlength="8"
+              inputmode="text"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="spy-button">Verify</button>
+          </form>
+
+          <p id="feedback" class="spy-feedback"></p>
+
+          <button
+            id="next-button"
+            class="spy-button spy-next-button"
+            type="button"
+            hidden
+          >
+            Proceed to Next Briefing
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="word-loader.js"></script>
+  <script src="puzzle-config.js"></script>
+  <script src="puzzle-engine.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Briefing: Puzzle 6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/guides.css" />
+</head>
+<body data-puzzle-id="6">
+  <div class="spy-page">
+    <div class="spy-document-wrapper">
+      <section class="spy-document">
+        <header class="spy-header">
+          <span class="spy-header-line">Ministry of Defense</span>
+          <span class="spy-header-line">Signals &amp; Encoding</span>
+        </header>
+
+        <div class="spy-body">
+          <p><strong>Puzzle #6</strong></p>
+
+          <p>
+            Our intercept team recovered the following transmission. They insist
+            it is not random noise, and that the content is simple enough for a
+            field agent to decode without additional equipment.
+          </p>
+
+          <pre style="background: rgba(0,0,0,0.06); padding: 0.55rem 0.75rem; border-radius: 4px; font-family: &quot;Courier New&quot;, monospace; font-size: 0.95rem; overflow-x:auto;">
+01100011 01101111 01100100 01100101 00100000 01110011 01100011 01100001 01101110
+          </pre>
+
+          <p>Answer:</p>
+          <p>_ _ _ _  _ _ _ _</p>
+
+          <p>
+            <em>(clue: this is what you do with the mission data.)</em>
+          </p>
+        </div>
+
+        <div class="spy-code-section">
+          <div class="spy-code-label">Access code</div>
+          <!-- This display will be overwritten by puzzle-engine.js based on johnMilton[54] -->
+          <div class="spy-code-slots">_ _ _ _  _ _ _ _</div>
+
+          <form id="puzzle-form" class="spy-code-form" autocomplete="off">
+            <label for="code-input">Enter the decoded phrase</label>
+            <input
+              id="code-input"
+              class="spy-code-input"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="spy-button">Verify</button>
+          </form>
+
+          <p id="feedback" class="spy-feedback"></p>
+
+          <button
+            id="next-button"
+            class="spy-button spy-next-button"
+            type="button"
+            hidden
+          >
+            Proceed to Final Briefing
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Shared scripts (order matters) -->
+  <script src="word-loader.js"></script>
+  <script src="puzzle-config.js"></script>
+  <script src="puzzle-engine.js"></script>
+</body>
+</html>

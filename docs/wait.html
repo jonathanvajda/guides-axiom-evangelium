@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Briefing: Puzzle 4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/guides.css" />
+</head>
+<body data-puzzle-id="4">
+  <div class="spy-page">
+    <div class="spy-document-wrapper">
+      <section class="spy-document">
+        <header class="spy-header">
+          <span class="spy-header-line">Ministry of Defense</span>
+          <span class="spy-header-line">Observation Unit</span>
+        </header>
+
+        <div class="spy-body">
+          <p><strong>Puzzle #4</strong></p>
+
+          <p>
+            The previous operation revealed the nature of the function. Now we are
+            interested in what that function reveals when turned on the world
+            around you.
+          </p>
+
+          <p>Answer:</p>
+          <p>_ _ _ _ _ &nbsp; _ _ _</p>
+
+          <p>
+            <em>(Puzzle 3 solution is the function: what do you see?)</em>
+          </p>
+        </div>
+
+        <div class="spy-code-section">
+          <div class="spy-code-label">Access code</div>
+          <!-- This display will be overwritten by puzzle-engine.js based on johnMilton[62] -->
+          <div class="spy-code-slots">_ _ _ _ _ &nbsp; _ _ _</div>
+
+          <form id="puzzle-form" class="spy-code-form" autocomplete="off">
+            <label for="code-input">Enter the phrase you observe</label>
+            <input
+              id="code-input"
+              class="spy-code-input"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="spy-button">Verify</button>
+          </form>
+
+          <p id="feedback" class="spy-feedback"></p>
+
+          <button
+            id="next-button"
+            class="spy-button spy-next-button"
+            type="button"
+            hidden
+          >
+            Proceed to Next Briefing
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Shared scripts (order matters) -->
+  <script src="word-loader.js"></script>
+  <script src="puzzle-config.js"></script>
+  <script src="puzzle-engine.js"></script>
+</body>
+</html>
