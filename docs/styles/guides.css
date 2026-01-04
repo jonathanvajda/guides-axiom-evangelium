@@ -189,12 +189,12 @@ body {
   max-width: 260px;
   padding: 0.55rem 0.7rem;
   text-align: center;
-  caret-color: #1f8a4d;
+  caret-color: #222;
   border-radius: 0;
   border: none;
   border-bottom: 2px solid #000;
   background: transparent;
-  color: #e5ffe0;
+  color: #000;
   font-family: "Courier New", monospace;
   font-size: 1.1rem;
   letter-spacing: 0.35em;
